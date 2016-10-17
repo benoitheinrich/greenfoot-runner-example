@@ -1,4 +1,3 @@
-
 import greenfoot.Actor;
 import greenfoot.Greenfoot;
 

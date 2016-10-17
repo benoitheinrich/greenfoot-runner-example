@@ -1,4 +1,3 @@
-
 import greenfoot.Actor;
 
 public class Poison extends Actor {
