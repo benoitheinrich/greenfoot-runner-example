@@ -5,12 +5,12 @@ import bh.greenfoot.runner.GreenfootRunner;
  */
 public class MyRunner extends GreenfootRunner {
     static {
-        GreenfootRunner.mainClass = MyRunner.class;
-    }
-
-    @Override
-    protected Configuration getConfiguration() {
-        return Configuration.forWorld(Garden.class)
-                .projectName("Catch the hedghogs");
+        // 2. Bootstrap the runner class.
+        bootstrap(MyRunner.class,
+                // 3. Prepare the configuration for the runner based on the world class
+                Configuration.forWorld(Garden.class)
+                        // Set the project name as you wish
+                        .projectName("Catch the hedghogs")
+        );
     }
 }
